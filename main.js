@@ -60,7 +60,7 @@ function isPrime(num) {
     numtotal += number.charAt(i);
   }
 
-  if (numtotal % 3 == 0) {
+  if (numtotal % 3 == 0 || numtotal % 2 == 0 || num >= 99) {
     return false;
   } else return true;
 }
